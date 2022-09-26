@@ -1,0 +1,83 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+:root{
+    --title_color: hsl(193, 38%, 86%);
+    --accent_color: hsl(150, 100%, 66%);
+    --secundary_color: hsl(217, 19%, 38%);
+    --background-main_color: hsl(217, 19%, 24%);
+    --background-body_color: hsl(218, 23%, 16%); 
+
+}
+
+#advice-num {
+    color: var(--accent_color);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.75rem;
+    padding-bottom: 1em;
+}
+
+#advice{
+    font-size: 1.5rem;
+    color: var(--title_color);
+    padding-bottom: .5em;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 1em;
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--background-body_color);
+}
+
+main{
+    max-width: 400px;
+    border-radius: 1em;
+    position: relative;
+    padding: 2em;
+    text-align: center;
+    background-color: var(--background-main_color);
+}
+
+.quote-img{
+    margin-bottom: 1em;
+}
+
+.green-circle {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8em;
+    border: none;
+    border-radius: 50%;
+    color: var(--background-body_color);
+    background-color: var(--accent_color);
+    position: absolute;
+    right: 45%;
+    bottom: -7%;
+    cursor: pointer;
+}
+
+.green-circle:hover {
+    box-shadow: 0px 10px 15px var(--accent_color) inset, 0px 0px 18px var(--accent_color);
+}
+
+.dice{
+    background-color: var(--accent_color);
+}
+
+
+
